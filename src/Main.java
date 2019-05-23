@@ -8,11 +8,11 @@ import java.util.Random;
 public class Main {
 
     public static void main(String[] args) {
-        int iteration = 15000;
+        int iteration = 1500000;
         RandomStrategy randomStrategy = new RandomStrategy();
         GloutonStrategy gloutonStrategy = new GloutonStrategy();
         UcbStrategy ucbStrategy = new UcbStrategy(Math.sqrt(2), true);
-        Manchot[] manchots = buildManchots(15);
+        Manchot[] manchots = buildManchots(250);
 
 
         System.out.println("Score Random : " + randomStrategy.run(iteration, manchots));
